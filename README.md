@@ -57,20 +57,6 @@ AI-Receipt-Analyzer/
 ├── README.md           # Project documentation
 └── requirements.txt    # Python dependencies
 ```
-## 📸 App Preview & Interface
-
-### 📥 1. Image Upload & Receipt Parsing
-Upload receipt images (`.jpg`, `.jpeg`, `.png`, `.webp`) for automatic field extraction and OCR processing.
-
-![Upload Interface](assets/01-upload-interface.png)
-
----
-
-### 🧾 2. Receipt Extraction & Key Metadata
-View extracted merchant details, transaction dates, payment types, and line items side-by-side with the receipt image.
-
-![Receipt Summary & Details](assets/02-receipt-summary.png)
-
 ---
 ## 📸 Screenshots
 
