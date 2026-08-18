@@ -548,10 +548,14 @@ except Exception as error:
 
     st.stop()
 
-
 # ============================================================
 # OCR LANGUAGE
 # ============================================================
+
+language_options = [
+    ("English", "eng"),
+    ("Polish", "pol"),
+]
 
 language_labels = [
     label
@@ -566,7 +570,6 @@ selected_label = st.selectbox(
 selected_language = dict(
     language_options
 )[selected_label]
-
 
 # ============================================================
 # IMAGE PREPROCESSING
