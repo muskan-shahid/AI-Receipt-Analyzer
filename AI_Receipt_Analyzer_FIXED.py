@@ -73,31 +73,43 @@ TESSERACT_PATH = resolve_tesseract()
 # TESSDATA PATH
 # ============================================================
 
+
 def resolve_tessdata(tesseract_path):
-    """
-    Find the tessdata directory.
-    """
+    """Find tessdata on Windows and Linux/Streamlit Cloud."""
 
     if tesseract_path is None:
         return None
 
     possible_paths = [
         tesseract_path.parent / "tessdata",
-        Path(
-            r"C:\Program Files\Tesseract-OCR\tessdata"
-        ),
-        Path(
-            r"C:\Program Files (x86)\Tesseract-OCR\tessdata"
-        ),
-        Path(
-            r"C:\Users\HP\Desktop\tessdata"
-        ),
+
+        # Linux / Streamlit Cloud
+        Path("/usr/share/tesseract-ocr/tessdata"),
+        Path("/usr/share/tesseract-ocr/5/tessdata"),
+        Path("/usr/share/tesseract-ocr/4.00/tessdata"),
+        Path("/usr/share/tesseract-ocr/5.3/tessdata"),
+
+        # Windows
+        Path("C:/Program Files/Tesseract-OCR/tessdata"),
+        Path("C:/Program Files (x86)/Tesseract-OCR/tessdata"),
+        Path("C:/Users/HP/Desktop/tessdata"),
     ]
 
     for path in possible_paths:
-
         if path.is_dir():
             return path
+
+    for base_path in [
+        Path("/usr/share"),
+        Path("/usr/local/share"),
+    ]:
+        if base_path.exists():
+            try:
+                for path in base_path.rglob("tessdata"):
+                    if path.is_dir():
+                        return path
+            except (PermissionError, OSError):
+                pass
 
     return None
 
