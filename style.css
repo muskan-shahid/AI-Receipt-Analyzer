@@ -1,0 +1,324 @@
+/* ============================================================
+   AI RECEIPT ANALYZER
+   PREMIUM DARK FINANCE UI
+   ============================================================ */
+
+.stApp {
+    background:
+        radial-gradient(
+            circle at 85% 0%,
+            rgba(34, 211, 238, 0.10),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 5% 80%,
+            rgba(20, 184, 166, 0.08),
+            transparent 30%
+        ),
+        #07111f;
+
+    color: #f8fafc;
+}
+
+
+/* MAIN CONTAINER */
+
+.main .block-container {
+    max-width: 1450px;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+
+/* SIDEBAR */
+
+section[data-testid="stSidebar"] {
+    background:
+        linear-gradient(
+            180deg,
+            #0a1728 0%,
+            #07111f 100%
+        );
+
+    border-right: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+section[data-testid="stSidebar"] * {
+    color: #dbeafe;
+}
+
+
+/* HEADINGS */
+
+h1 {
+    color: #f8fafc !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.03em;
+}
+
+h2,
+h3 {
+    color: #e2e8f0 !important;
+    font-weight: 750 !important;
+}
+
+
+/* HERO */
+
+.hero {
+    padding: 28px 30px;
+    margin: 8px 0 28px 0;
+
+    border: 1px solid rgba(34, 211, 238, 0.18);
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(15, 31, 52, 0.95),
+            rgba(9, 25, 42, 0.75)
+        );
+
+    box-shadow:
+        0 20px 55px rgba(0, 0, 0, 0.25);
+}
+
+.hero-kicker {
+    color: #22d3ee;
+
+    font-size: 0.78rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.14em;
+
+    text-transform: uppercase;
+
+    margin-bottom: 8px;
+}
+
+.hero-title {
+    color: #f8fafc;
+
+    font-size: 2.4rem;
+
+    font-weight: 850;
+
+    line-height: 1.05;
+
+    margin-bottom: 10px;
+}
+
+.hero-text {
+    color: #9fb3c8;
+
+    font-size: 1rem;
+
+    margin: 0;
+}
+
+
+/* METRIC CARDS */
+
+div[data-testid="stMetric"] {
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 30, 49, 0.95),
+            rgba(10, 23, 39, 0.90)
+        );
+
+    border: 1px solid rgba(34, 211, 238, 0.10);
+
+    border-radius: 18px;
+
+    padding: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.20);
+
+    transition:
+        transform 0.2s ease,
+        border 0.2s ease;
+}
+
+div[data-testid="stMetric"]:hover {
+
+    transform: translateY(-3px);
+
+    border:
+        1px solid rgba(34, 211, 238, 0.30);
+}
+
+div[data-testid="stMetricLabel"] {
+    color: #94a3b8 !important;
+
+    font-size: 0.82rem !important;
+
+    font-weight: 600 !important;
+}
+
+div[data-testid="stMetricValue"] {
+    color: #22d3ee !important;
+
+    font-weight: 800 !important;
+
+    font-size: 1.3rem !important;
+}
+
+
+/* BUTTONS */
+
+.stButton > button,
+.stDownloadButton > button {
+
+    border-radius: 12px;
+
+    min-height: 44px;
+
+    font-weight: 750;
+
+    background:
+        linear-gradient(
+            135deg,
+            #22d3ee,
+            #14b8a6
+        );
+
+    color: #03131d;
+
+    border: none;
+
+    box-shadow:
+        0 8px 22px rgba(34, 211, 238, 0.14);
+
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover,
+.stDownloadButton > button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 28px rgba(34, 211, 238, 0.30);
+}
+
+
+/* FILE UPLOADER */
+
+div[data-testid="stFileUploader"] {
+
+    border:
+        1px dashed rgba(34, 211, 238, 0.35);
+
+    border-radius: 18px;
+
+    background:
+        rgba(11, 27, 44, 0.58);
+
+    padding: 8px;
+}
+
+
+/* INPUTS */
+
+div[data-baseweb="select"] > div,
+.stTextInput > div > div,
+.stTextArea textarea {
+
+    background: #0b1b2d !important;
+
+    border-color:
+        rgba(148, 163, 184, 0.18) !important;
+
+    color: #e2e8f0 !important;
+}
+
+
+/* STATUS */
+
+.status-card {
+
+    padding: 14px 16px;
+
+    border-radius: 14px;
+
+    background:
+        rgba(34, 211, 238, 0.07);
+
+    border:
+        1px solid rgba(34, 211, 238, 0.16);
+
+    color: #bae6fd;
+
+    margin-bottom: 16px;
+}
+
+
+/* OCR */
+
+.ocr-box {
+
+    background: #06101c;
+
+    border:
+        1px solid rgba(34, 211, 238, 0.12);
+
+    border-radius: 14px;
+
+    padding: 18px;
+}
+
+
+/* DATAFRAME */
+
+.stDataFrame {
+
+    border-radius: 14px;
+
+    overflow: hidden;
+}
+
+
+/* DIVIDERS */
+
+hr {
+
+    border-color:
+        rgba(148, 163, 184, 0.10) !important;
+}
+
+
+/* FOOTER */
+
+footer {
+    visibility: hidden;
+}
+
+
+/* GRAPH CARD */
+
+.graph-card {
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 30, 49, 0.90),
+            rgba(7, 17, 31, 0.95)
+        );
+
+    border:
+        1px solid rgba(34, 211, 238, 0.10);
+
+    border-radius: 20px;
+
+    padding: 18px;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.20);
+
+    margin-top: 20px;
+}
