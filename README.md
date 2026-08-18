@@ -72,22 +72,36 @@ View extracted merchant details, transaction dates, payment types, and line item
 ![Receipt Summary & Details](assets/02-receipt-summary.png)
 
 ---
+## 📸 Screenshots
 
-### 📊 3. Financial Breakdown & Visual Analytics
-Interactive charts display expenditure totals, itemized price distribution, and spending ratios.
+### 🏠 Main Interface
 
-<p align="center">
-  <img src="assets/03-financial-breakdown.png" width="48%" title="Financial Overview">
-  <img src="assets/04-spending-by-item.png" width="48%" title="Itemized Charts">
-</p>
+<img width="945" height="379" alt="Main Interface" src="https://github.com/user-attachments/assets/37c559c2-fb4d-4fa9-84b2-a91b4736afc2" />
 
 ---
 
-### 💡 4. Savings Insights & Raw Export
-Analyze savings metrics and export parsed items directly to structured JSON or CSV format.
+### 🔍 OCR Results
 
-<p align="center">
-  <img src="assets/05-savings-gauge.png" width="48%" title="Savings Rate Gauge">
-  <img src="assets/06-extracted-items-table.png" width="48%" title="Extracted Items Table">
-</p>
+<img width="740" height="394" alt="OCR Results" src="https://github.com/user-attachments/assets/a91f1cf1-88a0-41cf-b700-778ec160faea" />
 
+---
+
+### 💰 Financial Insights
+
+<img width="746" height="404" alt="Financial Insights" src="https://github.com/user-attachments/assets/f71d80ee-d7fe-404c-825d-16510f0dd0f6" />
+
+---
+
+### 📊 Analytics
+
+<img width="739" height="391" alt="Analytics" src="https://github.com/user-attachments/assets/5929025b-19d9-4d1c-8762-191b9da972b4" />
+
+---
+
+### 📈 Visualizations
+
+<img width="1443" height="781" alt="Visualizations" src="https://github.com/user-attachments/assets/b36acc24-03f9-4021-9c2b-e72ae556d149" />
+---
+## 👩‍💻 Author
+
+**Muskan Shahid**
