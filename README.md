@@ -56,3 +56,38 @@ AI-Receipt-Analyzer/
 ├── receipt_analyzer.py # Core OCR preprocessing & data extraction logic
 ├── README.md           # Project documentation
 └── requirements.txt    # Python dependencies
+```
+## 📸 App Preview & Interface
+
+### 📥 1. Image Upload & Receipt Parsing
+Upload receipt images (`.jpg`, `.jpeg`, `.png`, `.webp`) for automatic field extraction and OCR processing.
+
+![Upload Interface](assets/01-upload-interface.png)
+
+---
+
+### 🧾 2. Receipt Extraction & Key Metadata
+View extracted merchant details, transaction dates, payment types, and line items side-by-side with the receipt image.
+
+![Receipt Summary & Details](assets/02-receipt-summary.png)
+
+---
+
+### 📊 3. Financial Breakdown & Visual Analytics
+Interactive charts display expenditure totals, itemized price distribution, and spending ratios.
+
+<p align="center">
+  <img src="assets/03-financial-breakdown.png" width="48%" title="Financial Overview">
+  <img src="assets/04-spending-by-item.png" width="48%" title="Itemized Charts">
+</p>
+
+---
+
+### 💡 4. Savings Insights & Raw Export
+Analyze savings metrics and export parsed items directly to structured JSON or CSV format.
+
+<p align="center">
+  <img src="assets/05-savings-gauge.png" width="48%" title="Savings Rate Gauge">
+  <img src="assets/06-extracted-items-table.png" width="48%" title="Extracted Items Table">
+</p>
+
