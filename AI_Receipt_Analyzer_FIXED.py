@@ -1886,10 +1886,14 @@ if "receipt_data" in st.session_state:
 
 st.subheader("📊 Visual Financial Insights")
 
-subtotal = safe_float(data.get("subtotal"))
-tax = safe_float(data.get("tax"))
-total = safe_float(data.get("total"))
-savings = safe_float(data.get("savings"))
+if "data" not in locals() or not isinstance(data, dict):
+    st.info("Upload and analyze a receipt to view financial insights.")
+    st.stop()
+
+subtotal = safe_float(data.get("subtotal", 0))
+tax = safe_float(data.get("tax", 0))
+total = safe_float(data.get("total", 0))
+savings = safe_float(data.get("savings", 0))
 
 # ------------------------------------------------------------
 # FINANCIAL BREAKDOWN
