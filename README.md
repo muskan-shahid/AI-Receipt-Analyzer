@@ -88,6 +88,7 @@ AI-Receipt-Analyzer/
 
 <img width="1443" height="781" alt="Visualizations" src="https://github.com/user-attachments/assets/b36acc24-03f9-4021-9c2b-e72ae556d149" />
 ---
-## 👩‍💻 Author
+
+##👩‍💻 Author
 
 **Muskan Shahid**
